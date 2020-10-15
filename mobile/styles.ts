@@ -42,6 +42,7 @@ export const FooterContainer = styled.View`
 `;
 
 export const FooterText = styled.Text`
+  font-family: "Nunito_700Bold";
   color: #8fa8b3;
 `;
 

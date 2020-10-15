@@ -1,13 +1,12 @@
 #page-landing {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 #page-landing .content-wrapper {
   position: relative;
@@ -16,14 +15,14 @@
   max-width: 1100px;
 
   height: 100%;
-  max-height: 680px;
+  max-height: 600px;
 
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
 
-  background: url('../../images/landing.svg') no-repeat 70% center;
+  background: url("../../images/landing.svg") no-repeat 70% center;
 }
 
 #page-landing .content-wrapper main {

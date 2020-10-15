@@ -19,6 +19,7 @@ export const CalloutContainer = styled(Callout)`
 `;
 
 export const CalloutText = styled.Text`
+  font-family: "Nunito_700Bold";
   color: #0089a5;
   font-size: 14px;
 `;
@@ -55,5 +56,3 @@ export const CreateOrphanageButton = styled(TouchableOpacity)`
   justify-content: center;
   align-items: center;
 `;
-
-export const CreateOrphanageButtonText = styled.Text``;

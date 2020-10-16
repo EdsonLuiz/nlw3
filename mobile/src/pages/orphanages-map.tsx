@@ -20,6 +20,11 @@ export default function OrphanagesMap() {
   const handleNavigationToOrphanageDetails = useCallback(() => {
     navigate("OrphanageDetails");
   }, []);
+
+  const handleNavigationToCreateOrphanage = useCallback(() => {
+    navigate("SelectMapPosition");
+  }, []);
+
   return (
     <Container>
       <MapContainer
@@ -52,7 +57,7 @@ export default function OrphanagesMap() {
 
       <FooterContainer>
         <FooterText>Dois orfanatos encontrados</FooterText>
-        <CreateOrphanageButton onPress={() => {}}>
+        <CreateOrphanageButton onPress={handleNavigationToCreateOrphanage}>
           <Feather name="plus" size={20} color="#fff" />
         </CreateOrphanageButton>
       </FooterContainer>

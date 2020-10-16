@@ -12,7 +12,7 @@ import {
 
 import mapMarker from "../images/map-marker.png";
 import { Marker } from "react-native-maps";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import Api from "../services/api";
 
 interface Orphanages {
@@ -34,9 +34,14 @@ export default function OrphanagesMap() {
     navigate("SelectMapPosition");
   }, []);
   
-  useEffect(() => {
+  // useEffect(() => {
+  //   Api.get('orphanages').then(response => setOrphanages(response.data))    
+  // },[])
+
+  
+  useFocusEffect(() => {
     Api.get('orphanages').then(response => setOrphanages(response.data))    
-  }, [])
+  })
 
   return (
     <Container>
